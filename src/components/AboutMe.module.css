@@ -22,8 +22,11 @@ main{
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    color: var(--purple-50);
     transition: color 0.1s;
+}
+
+.socialMedia > svg{
+    color: var(--purple-50);
 }
 
 .socialMedia a:hover, a:active{
