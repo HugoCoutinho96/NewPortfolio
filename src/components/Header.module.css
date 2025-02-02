@@ -30,20 +30,57 @@ header nav a:hover{
     color: var(--purple-50);
 }
 
+.menu-btn {
+    cursor: pointer;
+    background: transparent;
+    color: var(--purple-50);
+    border: none;
+    display: none;
+}
+
+.menu-btn:hover {
+    color: var(--purple);
+}
+
+/* Menu para mobile */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    width: 90%;
+    overflow: hidden;
+    z-index: 1000;
+    max-height: 0;
+    background: var(--menuMobile);
+    transition: max-height 0.4s ease-in-out;
+}
+
+.mobile-menu a {
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--purple-50);
+}
+
 @media(max-width: 768px){
     header{
         padding: 0.75rem 0.7rem 0.81rem;
+        align-items: center;
     }
 
     header nav{
         gap: 0.7rem;
+        display: none;
     }
 
     header nav a{
         font-size: 0.9rem;
-        font-weight: normal;
-        color: var(--white-50);
-        text-decoration: none;
-        transition: color 0.1s;
+    }
+
+    .menu-btn {
+        display: block;
     }
 }

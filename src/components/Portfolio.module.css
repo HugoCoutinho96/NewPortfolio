@@ -79,12 +79,14 @@ a{
     }
 
     .projects{
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 2.25rem;
     }
     
     .projects > div{
         width: 100%;
+        max-width: 320px;
         padding: 1rem 1rem;
     }
 
@@ -95,5 +97,6 @@ a{
     
     .appTech img{
         width: 100%;
+        max-width: 300px;
     }
 }
