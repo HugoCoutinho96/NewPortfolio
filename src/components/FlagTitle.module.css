@@ -1,0 +1,17 @@
+.tech{
+    border-radius: 8px;
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+}
+
+span{
+    border-radius: 1rem;
+    width: 10rem;
+    height: 2.81rem;
+    background: var(--purple-10);
+    color: var(--purple);
+    font-weight: bold;
+    padding: 0.75rem;
+}
+

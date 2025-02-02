@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.37rem 8.75rem;
+}
+
+@media(max-width: 768px){
+    .container{
+        padding: 2.37rem 1rem;
+    }
+}

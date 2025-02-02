@@ -1,0 +1,103 @@
+footer{
+    margin-top: 8.81rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header h1{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.contact{
+    display: flex;
+    align-items: flex-end;
+    gap: 2.5rem;
+}
+
+.contact > a{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    color: var(--purple-50);
+    border: 1px solid var(--purple-50);
+    transition: color background-color 0.1s;
+}
+
+.contact > a:hover{
+    background-color: var(--purple-10);
+    color: var(--purple);
+}
+
+.contact > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.contact > div > svg{
+    color: var(--purple-50);
+}
+
+.contact > div > p{
+    color: var(--purple);
+}
+
+.contact > div > a{
+    color: var(--white-50);
+}
+
+footer > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--purple-50);
+    cursor: pointer;
+
+    margin-top: 2rem;
+    transition: color 0.1s;
+}
+
+footer > a:hover{
+    color: var(--purple);
+}
+
+@media(max-width: 768px){
+    footer{
+        margin-top: 2.81rem;
+    }
+
+    .header h1{
+        font-size: 1.5rem;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact > a{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
