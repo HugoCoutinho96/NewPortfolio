@@ -33,13 +33,9 @@ header nav a:hover{
 .menu-btn {
     cursor: pointer;
     background: transparent;
-    color: var(--purple-50);
+    color: var(--purple);
     border: none;
     display: none;
-}
-
-.menu-btn:hover {
-    color: var(--purple);
 }
 
 /* Menu para mobile */
