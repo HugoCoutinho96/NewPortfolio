@@ -33,6 +33,12 @@ section{
     background-color: var(--purple-10);
 }
 
+.projects > div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .appInfo{
     display: flex;
     flex-direction: column;

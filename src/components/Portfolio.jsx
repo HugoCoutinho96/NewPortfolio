@@ -4,6 +4,7 @@ import styles from "./Portfolio.module.css"
 import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
+import RocketnotesImg from "../assets/rocketnotes.png"
 
 export function Portfolio(){
     return(
@@ -15,6 +16,30 @@ export function Portfolio(){
 
             <div className={styles.projects}>
                 <div>
+                    <a href="https://rocketnotes96.netlify.app/" target="_blank">
+                        <div className={styles.appInfo}>
+                            <h3>RocketNotes</h3>
+                            <p>
+                                Crie e organize suas notas personalizadas, 
+                                adicionando links e tags a elas, e salve-as 
+                                em sua conta para acessá-las de qualquer lugar.                                    
+                            </p>
+                        </div>
+
+                        <div className={styles.appTech}>
+                            <div>
+                                <FlagTitle tech title="ReactJs"/>
+                                <FlagTitle tech title="JavaScript"/>
+                                <FlagTitle tech title="HTML"/>
+                                <FlagTitle tech title="CSS"/>
+                                <FlagTitle tech title="StyledComponents"/>
+                            </div>
+                            <img src={RocketnotesImg} />
+                        </div>
+                    </a>
+                </div>
+
+                <div>
                     <a href="https://mytube2.netlify.app/" target="_blank">
                         <div className={styles.appInfo}>
                             <h3>MyTube</h3>
@@ -23,11 +48,11 @@ export function Portfolio(){
 
                         <div className={styles.appTech}>
                             <div>
-                                <FlagTitle tech title="React"/>
+                                <FlagTitle tech title="ReactJs"/>
                                 <FlagTitle tech title="JavaScript"/>
                                 <FlagTitle tech title="HTML"/>
                                 <FlagTitle tech title="CSS"/>
-                                <FlagTitle tech title="StylesComponents"/>
+                                <FlagTitle tech title="StyledComponents"/>
                             </div>
                             <img src={MyTubeImg} />
                         </div>
@@ -77,6 +102,7 @@ export function Portfolio(){
                         </div>
                     </a>
                 </div>
+
             </div>
         </section>
     )
