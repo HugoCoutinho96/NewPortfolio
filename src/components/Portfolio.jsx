@@ -4,7 +4,7 @@ import styles from "./Portfolio.module.css"
 import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
-import RocketnotesImg from "../assets/rocketnotes.png"
+import RocketnotesImg from "../assets/rocketnotes.jpg"
 
 export function Portfolio(){
     return(

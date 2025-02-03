@@ -25,8 +25,8 @@ section{
     width: 22.5rem;
     border: 1px solid var(--purple-50);
     border-radius: 8px;
-    padding: 1.68rem 1.87rem;
     transition: background-color 0.1s;
+    overflow: hidden;
 }
 
 .projects > div:hover{
@@ -34,9 +34,12 @@ section{
 }
 
 .projects > div a{
+    padding: 1.68rem 1.87rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    gap: 3rem;
 }
 
 .appInfo{
@@ -61,7 +64,6 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 4rem;
 }
 
 .appTech > div{
@@ -93,7 +95,6 @@ a{
     .projects > div{
         width: 100%;
         max-width: 320px;
-        padding: 1rem 1rem;
     }
 
     .appTech > div > span{
