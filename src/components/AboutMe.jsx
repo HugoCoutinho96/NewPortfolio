@@ -29,7 +29,7 @@ export function AboutMe(){
                 <p>👨‍💻 Estudando e desenvolvendo interfaces com JavaScript, React JS.</p>
                 <p>🎓 Graduando em Sistemas de informação pela Uninassau de Recife</p>
                 <p>💡 Interesses em desenvolvimento Front-end com React, JavaScript e UX/UI Design.</p>
-                <p>🚀 Tentando ser melhor do que ontem. Todos dias!</p>
+                <p>🚀 Tentando ser melhor do que ontem. Todos os dias!</p>
             </div>
         </main>
     )
