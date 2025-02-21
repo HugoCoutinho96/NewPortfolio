@@ -48,7 +48,9 @@ main{
 
 @media(max-width: 768px){
     main{
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
         padding: 2.31rem 0;
     }
 
@@ -65,11 +67,6 @@ main{
         margin-top: 0.4rem;
     }
 
-    .about{
-        width: 100%;
-        margin-top: 2.68rem;
-    }
-
     .about p{
         font-size: 0.9rem;
         line-height: 1.2;
@@ -78,5 +75,15 @@ main{
 
     .image{
         display: none;
+    }
+}
+
+@media(max-width: 660px){
+    main{
+        justify-content: space-between;
+    }
+
+    .about{
+        width: 100%;
     }
 }
