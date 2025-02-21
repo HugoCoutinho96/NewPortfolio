@@ -5,6 +5,7 @@ import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
 import RocketnotesImg from "../assets/rocketnotes.jpg"
+import { Cards } from "./Animation/Cards"
 
 export function Portfolio(){
     return(
@@ -15,7 +16,7 @@ export function Portfolio(){
             </div>
 
             <div className={styles.projects}>
-                <div>
+                <Cards>
                     <a href="https://rocketnotes96.netlify.app/" target="_blank">
                         <div className={styles.appInfo}>
                             <h3>RocketNotes</h3>
@@ -37,9 +38,9 @@ export function Portfolio(){
                             <img src={RocketnotesImg} />
                         </div>
                     </a>
-                </div>
+                </Cards>
 
-                <div>
+                <Cards>
                     <a href="https://mytube2.netlify.app/" target="_blank">
                         <div className={styles.appInfo}>
                             <h3>MyTube</h3>
@@ -57,9 +58,9 @@ export function Portfolio(){
                             <img src={MyTubeImg} />
                         </div>
                     </a>
-                </div>
+                </Cards>
 
-                <div>
+                <Cards>
                     <a href="https://merkury2.netlify.app/" target="_blank">
                         <div className={styles.appInfo}>
                             <h3>Merkury</h3>
@@ -79,9 +80,9 @@ export function Portfolio(){
                             <img src={MerkuryImg} />
                         </div>
                     </a>
-                </div>
+                </Cards>
 
-                <div>
+                <Cards>
                     <a href="https://nodeprop2.netlify.app/" target="_blank">
                         <div className={styles.appInfo}>
                             <h3>NodeProp</h3>
@@ -101,8 +102,7 @@ export function Portfolio(){
                             <img src={NodePropImg} />
                         </div>
                     </a>
-                </div>
-
+                </Cards>
             </div>
         </section>
     )
