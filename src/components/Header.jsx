@@ -12,23 +12,15 @@ export function Header(){
         }
     }
 
-    const scrollToTop = (e) => {
-        let position = 0
-
-        switch(e){
-            case 1: position = 0; break;
-            case 2: position = 780; break;
-            case 3: position = 1200; break;
-            case 4: position = 0; break;
-            case 5: position = 640; break;
-            case 6: position = 1800; break;
+    const scrollToSection = (tag) => {
+        const element = document.querySelector(tag);
+      
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const topPosition = rect.top + window.scrollY;
+          window.scrollTo({ top: topPosition, behavior: "smooth" });
         }
-
-        window.scrollTo({
-        top: position,
-        behavior: "smooth",
-        });
-    };
+      };
 
     return(
         <header>
@@ -37,15 +29,15 @@ export function Header(){
             </div>
 
             <nav>
-                <a href="#" onClick={e => scrollToTop(1)}>Sobre mim</a>
-                <a href="#" onClick={e => scrollToTop(2)}>Portfólio</a>
-                <a href="#" onClick={e => scrollToTop(3)}>Contato</a>
+                <a href="#" onClick={() => scrollToSection("main")}>Sobre mim</a>
+                <a href="#" onClick={() => scrollToSection("section")}>Portfólio</a>
+                <a href="#" onClick={() => scrollToSection("footer")}>Contato</a>
             </nav>
 
             <div className={styles['mobile-menu']} id="mobileMenu">
-                <a href="#" onClick={e => scrollToTop(4)}>Sobre mim</a>
-                <a href="#" onClick={e => scrollToTop(5)}>Portfólio</a>
-                <a href="#" onClick={e => scrollToTop(6)}>Contato</a>
+                <a href="#" onClick={() => scrollToSection("main")}>Sobre mim</a>
+                <a href="#" onClick={() => scrollToSection("section")}>Portfólio</a>
+                <a href="#" onClick={() => scrollToSection("footer")}>Contato</a>
             </div>
 
             <button className={styles['menu-btn']} onClick={toggleMenu}><List size={32} /></button>
