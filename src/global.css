@@ -3,6 +3,7 @@
     --white-50: #FFFFFF80;
     
     --menuMobile: #5735a0;
+    --menuFixed: #3a2068;
     --purple: #7B4AE2;
     --purple-5: #7B4AE20D; 
     --purple-10: #7a4ae21e;
@@ -16,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body{
     background: var(--dark);
