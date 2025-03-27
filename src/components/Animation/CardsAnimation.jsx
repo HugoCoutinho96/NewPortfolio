@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export function Cards({children}){
+export function CardsAnimation({children}){
   const { ref, inView } = useInView({
     triggerOnce: true, // A animação ocorre apenas uma vez
     threshold: 0.5, // Aciona quando 50% do elemento estiver visível

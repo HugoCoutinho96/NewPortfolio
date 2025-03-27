@@ -46,9 +46,13 @@ main{
     margin-top: 1rem;
 }
 
-@media(max-width: 768px){
+.image{
+    opacity: 0.7;
+}
+
+@media(max-width: 1024px){
     main{
-        flex-wrap: wrap;
+        width: 90vw;
         justify-content: space-around;
         gap: 2rem;
         padding: 2.31rem 0;
@@ -80,6 +84,7 @@ main{
 
 @media(max-width: 660px){
     main{
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 

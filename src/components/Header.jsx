@@ -32,7 +32,7 @@ export function Header(){
     window.addEventListener("scroll", () => {
         const header = document.querySelector("header");
     
-        if (window.scrollY > 33) {
+        if (window.scrollY > 33 && window.innerWidth > 1024) {
             header.style.setProperty("background-color", "var(--menuFixed)");
         } else {
             header.style.setProperty("background-color", "var(--purple-5)");

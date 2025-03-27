@@ -68,8 +68,8 @@ section{
 
 .appTech > div{
     display: flex;
-    gap: 0.3rem;
     flex-wrap: wrap;
+    gap: 0.3rem;
 }
 
 .appTech img{
@@ -81,7 +81,11 @@ a{
     text-decoration: none;
 }
 
-@media(max-width: 768px){
+@media(max-width: 1024px){
+    .header{
+        width: 90vw;
+    }
+
     .header h1{
         font-size: 2rem;
     }

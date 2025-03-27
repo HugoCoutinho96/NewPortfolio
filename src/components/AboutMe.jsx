@@ -34,9 +34,9 @@ export function AboutMe(){
             <AboutMeAnimation>
                 <div className={styles.about}>
                     <FlagTitle title="🧐 Sobre mim"/>
-                    <p>👨‍💻 Estudando e desenvolvendo interfaces com JavaScript, React JS e seu ecossistema.</p>
+                    <p>👨‍💻 Estudando e desenvolvendo interfaces com Reactjs e seu ecossistema.</p>
                     <p>🎓 Graduando em Sistemas de informação pela Uninassau de Recife</p>
-                    <p>💡 Interesses em desenvolvimento Front-end com React JS, JavaScript e TypeScript</p>
+                    <p>💡 Interesses em desenvolvimento Front-end com Reactjs, Nextjs, JavaScript e TypeScript</p>
                     <p>🚀 Tentando ser melhor do que ontem. Todos os dias!</p>
                 </div>
             </AboutMeAnimation>

@@ -1,11 +1,13 @@
-import { FlagTitle } from "./FlagTitle"
 import styles from "./Portfolio.module.css"
+import { CardsAnimation } from "./Animation/CardsAnimation"
 
 import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
 import RocketnotesImg from "../assets/rocketnotes.jpg"
-import { Cards } from "./Animation/Cards"
+
+import { FlagTitle } from "./FlagTitle"
+import { Cards } from "./Cards/Cards"
 
 export function Portfolio(){
     return(
@@ -16,93 +18,51 @@ export function Portfolio(){
             </div>
 
             <div className={styles.projects}>
-                <Cards>
-                    <a href="https://rocketnotes96.netlify.app/" target="_blank">
-                        <div className={styles.appInfo}>
-                            <h3>RocketNotes</h3>
-                            <p>
-                                Crie e organize suas notas personalizadas, 
+                <CardsAnimation>
+                    <Cards
+                        url="https://rocketnotes96.netlify.app/"
+                        name="RocketNotes"
+                        description="Crie e organize suas notas personalizadas, 
                                 adicionando links e tags a elas, e salve-as 
-                                em sua conta para acessá-las de qualquer lugar.                                    
-                            </p>
-                        </div>
+                                em sua conta para acessá-las de qualquer lugar."
+                        tecnologia={["ReactJs", "Javascript", "HTML", "CSS", "Styled-components"]}
+                        img={RocketnotesImg}
+                    />
+                </CardsAnimation>
 
-                        <div className={styles.appTech}>
-                            <div>
-                                <FlagTitle tech title="ReactJs"/>
-                                <FlagTitle tech title="JavaScript"/>
-                                <FlagTitle tech title="HTML"/>
-                                <FlagTitle tech title="CSS"/>
-                                <FlagTitle tech title="StyledComponents"/>
-                            </div>
-                            <img src={RocketnotesImg} />
-                        </div>
-                    </a>
-                </Cards>
+                <CardsAnimation>
+                     <Cards
+                        url="https://mytube2.netlify.app/"
+                        name="MyTube"
+                        description="Aplicação que permite criar playlists personalizadas com URLs do YouTube."
+                        tecnologia={["ReactJs", "Javascript", "HTML", "CSS", "Styled-components"]}
+                        img={MyTubeImg}
+                    />
+                </CardsAnimation>
 
-                <Cards>
-                    <a href="https://mytube2.netlify.app/" target="_blank">
-                        <div className={styles.appInfo}>
-                            <h3>MyTube</h3>
-                            <p>Aplicação que permite criar playlists personalizadas com URLs do YouTube. </p>
-                        </div>
-
-                        <div className={styles.appTech}>
-                            <div>
-                                <FlagTitle tech title="ReactJs"/>
-                                <FlagTitle tech title="JavaScript"/>
-                                <FlagTitle tech title="HTML"/>
-                                <FlagTitle tech title="CSS"/>
-                                <FlagTitle tech title="StyledComponents"/>
-                            </div>
-                            <img src={MyTubeImg} />
-                        </div>
-                    </a>
-                </Cards>
-
-                <Cards>
-                    <a href="https://merkury2.netlify.app/" target="_blank">
-                        <div className={styles.appInfo}>
-                            <h3>Merkury</h3>
-                            <p>
-                                Uma página sobre o negócio, recursos oferecidos e 
+                <CardsAnimation>
+                    <Cards
+                        url="https://merkury2.netlify.app/"
+                        name="Merkury"
+                        description="Uma página sobre o negócio, recursos oferecidos e 
                                 planos de preços para ajudar o cliente a encontrar a melhor
-                                solução para suas necessidades.
-                            </p>
-                        </div>
+                                solução para suas necessidades."
+                        tecnologia={["HTML", "CSS", "Javascript"]}
+                        img={MerkuryImg}
+                    />
+                </CardsAnimation>
 
-                        <div className={styles.appTech}>
-                            <div>
-                                <FlagTitle tech title="HTML"/>
-                                <FlagTitle tech title="CSS"/>
-                                <FlagTitle tech title="JavaScript"/>
-                            </div>
-                            <img src={MerkuryImg} />
-                        </div>
-                    </a>
-                </Cards>
-
-                <Cards>
-                    <a href="https://nodeprop2.netlify.app/" target="_blank">
-                        <div className={styles.appInfo}>
-                            <h3>NodeProp</h3>
-                            <p>
-                                Uma página voltada ao marketing, 
+                <CardsAnimation>
+                    <Cards
+                        url="https://nodeprop2.netlify.app/"
+                        name="NodeProp"
+                        description="Uma página voltada ao marketing, 
                                 branding e publicidade, com foco em experiências de marca, 
-                                estratégias de engajamento e conexão entre marcas e consumidores
-                            </p>
-                        </div>
-
-                        <div className={styles.appTech}>
-                            <div>
-                                <FlagTitle tech title="HTML"/>
-                                <FlagTitle tech title="CSS"/>
-                                <FlagTitle tech title="JavaScript"/>
-                            </div>
-                            <img src={NodePropImg} />
-                        </div>
-                    </a>
-                </Cards>
+                                estratégias de engajamento e conexão entre marcas e consumidores"
+                        tecnologia={["HTML", "CSS", "Javascript"]}
+                        img={NodePropImg}
+                    />
+                </CardsAnimation>
             </div>
         </section>
     )

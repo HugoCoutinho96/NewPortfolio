@@ -82,7 +82,7 @@ footer > a:hover{
     color: var(--purple);
 }
 
-@media(max-width: 768px){
+@media(max-width: 1024px){
     footer{
         margin-top: 2.81rem;
     }
