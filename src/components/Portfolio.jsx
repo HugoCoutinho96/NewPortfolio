@@ -21,7 +21,7 @@ export function Portfolio(){
             <div className={styles.projects}>
                 <CardsAnimation>
                     <Cards
-                        url="https://vibe-shop-800nf5z0m-hugo-coutinhos-projects.vercel.app/"
+                        url="https://vibe-shop.vercel.app/"
                         name="Vibe Shop"
                         description="Vibe Shop é uma loja online de camisetas estilizadas."
                         tecnologia={["NextJs", "Typescript", "Javascript", "Tailwind", "Stripe"]}
