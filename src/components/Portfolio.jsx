@@ -5,6 +5,7 @@ import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
 import RocketnotesImg from "../assets/rocketnotes.jpg"
+import VibeshopImg from "../assets/vibe-shop.png"
 
 import { FlagTitle } from "./FlagTitle"
 import { Cards } from "./Cards/Cards"
@@ -20,12 +21,22 @@ export function Portfolio(){
             <div className={styles.projects}>
                 <CardsAnimation>
                     <Cards
+                        url="https://vibe-shop-800nf5z0m-hugo-coutinhos-projects.vercel.app/"
+                        name="Vibe Shop"
+                        description="Vibe Shop é uma loja online de camisetas estilizadas."
+                        tecnologia={["NextJs", "Typescript", "Javascript", "Tailwind", "Stripe"]}
+                        img={VibeshopImg}
+                    />
+                </CardsAnimation>
+
+                <CardsAnimation>
+                    <Cards
                         url="https://rocketnotes96.netlify.app/"
                         name="RocketNotes"
                         description="Crie e organize suas notas personalizadas, 
                                 adicionando links e tags a elas, e salve-as 
                                 em sua conta para acessá-las de qualquer lugar."
-                        tecnologia={["ReactJs", "Javascript", "HTML", "CSS", "Styled-components"]}
+                        tecnologia={["ReactJs", "Javascript", "Styled-components"]}
                         img={RocketnotesImg}
                     />
                 </CardsAnimation>
@@ -35,7 +46,7 @@ export function Portfolio(){
                         url="https://mytube2.netlify.app/"
                         name="MyTube"
                         description="Aplicação que permite criar playlists personalizadas com URLs do YouTube."
-                        tecnologia={["ReactJs", "Javascript", "HTML", "CSS", "Styled-components"]}
+                        tecnologia={["ReactJs", "Javascript", "Styled-components"]}
                         img={MyTubeImg}
                     />
                 </CardsAnimation>
