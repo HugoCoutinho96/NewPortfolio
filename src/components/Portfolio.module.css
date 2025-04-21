@@ -1,6 +1,8 @@
 section{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    max-width: 1600px;
 }
 
 .header{
@@ -17,6 +19,8 @@ section{
 
 .projects{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 6.25rem;
 }
@@ -82,8 +86,8 @@ a{
 }
 
 @media(max-width: 1024px){
-    .header{
-        width: 90vw;
+    .header {
+        padding: 0 30px;
     }
 
     .header h1{
@@ -91,7 +95,6 @@ a{
     }
 
     .projects{
-        flex-wrap: wrap;
         justify-content: center;
         margin-top: 2.25rem;
     }
