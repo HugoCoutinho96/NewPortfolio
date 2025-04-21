@@ -4,7 +4,7 @@ import { CardsAnimation } from "./Animation/CardsAnimation"
 import MyTubeImg from "../assets/mytube.jpg"
 import MerkuryImg from "../assets/merkury.jpg"
 import NodePropImg from "../assets/nodeprop.jpg"
-import RocketnotesImg from "../assets/rocketnotes.jpg"
+import TextNotesImg from "../assets/textnotes.jpg"
 import VibeshopImg from "../assets/vibe-shop.png"
 
 import { FlagTitle } from "./FlagTitle"
@@ -31,13 +31,13 @@ export function Portfolio(){
 
                 <CardsAnimation>
                     <Cards
-                        url="https://rocketnotes96.netlify.app/"
-                        name="RocketNotes"
+                        url="https://text-notes.netlify.app/"
+                        name="TextNotes"
                         description="Crie e organize suas notas personalizadas, 
                                 adicionando links e tags a elas, e salve-as 
                                 em sua conta para acessá-las de qualquer lugar."
                         tecnologia={["ReactJs", "Javascript", "Styled-components"]}
-                        img={RocketnotesImg}
+                        img={TextNotesImg}
                     />
                 </CardsAnimation>
 
